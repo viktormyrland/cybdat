@@ -2,8 +2,8 @@
 import Block from "./_components/block";
 import { Oxanium, Lato } from "next/font/google";
 
-const oxanium = Oxanium({ weight: "600" });
-const lato = Lato({ weight: "400" });
+const oxanium = Oxanium({ weight: "600", subsets: ["latin"] });
+const lato = Lato({ weight: "400", subsets: ["latin"] });
 
 const blocks = [
   {
