@@ -26,6 +26,16 @@ const blocks = [
     url: "https://abakus.no",
     icon: "circle",
   },
+  {
+    title: "Fysikk",
+    url: "http://web.phys.ntnu.no/~stovneng/TFY4125_2024/tfy4125.htm",
+    icon: "science",
+  },
+  {
+    title: "Fysikk Lab",
+    url: "http://home.phys.ntnu.no/brukdef/undervisning/fyslab",
+    icon: "lab",
+  },
 ];
 
 export default function Home() {
