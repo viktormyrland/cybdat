@@ -6,6 +6,7 @@ import CircleIcon from "@mui/icons-material/Circle";
 import CalculateIcon from "@mui/icons-material/Calculate";
 import ScienceIcon from '@mui/icons-material/Science';
 import BiotechIcon from '@mui/icons-material/Biotech';
+import AssignmentIcon from '@mui/icons-material/Assignment';
 
 export interface BlockParams {
   title: string;
@@ -33,6 +34,10 @@ export default function Block(params: { block: BlockParams }) {
       break;
     case "lab":
       icon = <BiotechIcon style={{ width: "95%", height: "95%" }} />;
+      break;
+    case "assignment":
+      icon = <AssignmentIcon style={{ width: "95%", height: "95%" }} />;
+      break;
   }
 
   return (

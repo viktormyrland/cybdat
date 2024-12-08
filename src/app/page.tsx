@@ -36,6 +36,11 @@ const blocks = [
     url: "http://home.phys.ntnu.no/brukdef/undervisning/fyslab",
     icon: "lab",
   },
+  {
+    title: "Ovsys",
+    url: "https://ovsys.math.ntnu.no/",
+    icon: "assignment",
+  },
 ];
 
 export default function Home() {
