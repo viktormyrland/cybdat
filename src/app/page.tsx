@@ -13,7 +13,8 @@ const blocks = [
     icon: "math",
   },
   {
-    title: "Objektorientert",
+    title: "Objekt-Wiki",
+    /*  titleClasses: "text-sm", */
     subtitle: "TDT4100",
     url: "https://www.ntnu.no/wiki/display/tdt4100",
     icon: "terminal",
