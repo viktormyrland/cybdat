@@ -11,40 +11,46 @@ const blocks = [
     subtitle: "TMA4115",
     url: "https://wiki.math.ntnu.no/tma4115/2025v/start",
     icon: "math",
+    iconColor: "#2d1896",
   },
   {
     title: "Objekt-Wiki",
-    /*  titleClasses: "text-sm", */
     subtitle: "TDT4100",
     url: "https://www.ntnu.no/wiki/display/tdt4100",
     icon: "terminal",
+    iconColor: "#333333",
   },
   {
     title: "Fysikk",
     subtitle: "TFY4125",
     url: "http://web.phys.ntnu.no/~stovneng/TFY4125_2024/tfy4125.htm",
     icon: "science",
+    iconColor: "#44ab4d",
   },
   {
     title: "Fysikk Lab",
     subtitle: "TFY4125",
     url: "http://home.phys.ntnu.no/brukdef/undervisning/fyslab",
     icon: "lab",
+    iconColor: "#44ab4d",
   },
   {
     title: "Studentweb",
     url: "https://fsweb.no/studentweb/login.jsf?inst=FSNTNU",
     icon: "school",
+    iconColor: "#874600",
   },
   {
     title: "Abakus",
     url: "https://abakus.no",
     icon: "circle",
+    iconColor: "#cc0000",
   },
   {
     title: "Ovsys",
     url: "https://ovsys.math.ntnu.no/",
     icon: "assignment",
+    iconColor: "#118099",
   },
 ];
 
@@ -55,9 +61,9 @@ export default function Home() {
         <h1 className={`${oxanium.className} text-5xl text-white`}>
           CYBDAT-START
         </h1>
-        <h3 className={`text-md font-mono font-bold text-[#aaa]`}>
+        {/* <h3 className={`text-md font-mono font-bold text-[#aaa]`}>
           For de som ikke finner frem
-        </h3>
+        </h3> */}
         <div
           className={`flex h-full w-[95%] max-w-[1500px] flex-row flex-wrap content-start justify-center gap-3 p-6 ${lato.className}`}
         >
