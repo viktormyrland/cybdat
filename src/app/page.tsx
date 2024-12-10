@@ -14,7 +14,6 @@ const blocks = [
   },
   {
     title: "Objekt-Wiki",
-    /*  titleClasses: "text-sm", */
     subtitle: "TDT4100",
     url: "https://www.ntnu.no/wiki/display/tdt4100",
     icon: "terminal",
@@ -55,9 +54,9 @@ export default function Home() {
         <h1 className={`${oxanium.className} text-5xl text-white`}>
           CYBDAT-START
         </h1>
-        <h3 className={`text-md font-mono font-bold text-[#aaa]`}>
+        {/*  <h3 className={`text-md font-mono font-bold text-[#aaa]`}>
           For de som ikke finner frem
-        </h3>
+        </h3> */}
         <div
           className={`flex h-full w-[95%] max-w-[1500px] flex-row flex-wrap content-start justify-center gap-3 p-6 ${lato.className}`}
         >

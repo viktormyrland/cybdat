@@ -82,7 +82,7 @@ export default function Block(params: { block: BlockParams }) {
       href={params.block.url}
       className="transition-transform hover:scale-105"
     >
-      <div className="flex h-36 w-36 flex-col items-center border border-[#FFDAAD] bg-[#FFF6EB] p-2">
+      <div className="flex h-36 w-36 flex-col items-center rounded-md border border-[#888] bg-[#FFF6EB] p-2">
         <div>
           <h2 className={`text-center ${params.block.titleClasses ?? ""}`}>
             {params.block.title}
