@@ -21,7 +21,7 @@ const blocks = [
   {
     title: "Fysikk",
     subtitle: "TFY4125",
-    url: "http://web.phys.ntnu.no/~stovneng/TFY4125_2024/tfy4125.htm",
+    url: "https://stovneng.folk.ntnu.no/TFY4125_2025/tfy4125.htm",
     icon: "science",
   },
   {
