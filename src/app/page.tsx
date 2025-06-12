@@ -7,28 +7,16 @@ const lato = Lato({ weight: "400", subsets: ["latin"] });
 
 const blocks = [
   {
-    title: "Matematikk 3",
-    subtitle: "TMA4115",
-    url: "https://wiki.math.ntnu.no/tma4115/2025v/start",
+    title: "AlgDat",
+    subtitle: "TDT4120",
+    url: "https://algdat.idi.ntnu.no/",
+    icon: "board",
+  },
+  {
+    title: "Matematikk 4D",
+    subtitle: "TMA4135",
+    url: "https://wiki.math.ntnu.no/tma4130/2025h/start",
     icon: "math",
-  },
-  {
-    title: "Objekt-Wiki",
-    subtitle: "TDT4100",
-    url: "https://www.ntnu.no/wiki/display/tdt4100",
-    icon: "terminal",
-  },
-  {
-    title: "Fysikk",
-    subtitle: "TFY4125",
-    url: "https://stovneng.folk.ntnu.no/TFY4125_2025/tfy4125.htm",
-    icon: "science",
-  },
-  {
-    title: "Fysikk Lab",
-    subtitle: "TFY4125",
-    url: "http://home.phys.ntnu.no/brukdef/undervisning/fyslab",
-    icon: "lab",
   },
   {
     title: "Studentweb",
@@ -44,6 +32,11 @@ const blocks = [
     title: "Ovsys",
     url: "https://ovsys.math.ntnu.no/",
     icon: "assignment",
+  },
+  {
+    title: "ChatGPT",
+    url: "https://chatgpt.com/",
+    icon: "fix",
   },
 ];
 

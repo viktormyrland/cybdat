@@ -7,6 +7,9 @@ import CalculateIcon from "@mui/icons-material/Calculate";
 import ScienceIcon from "@mui/icons-material/Science";
 import BiotechIcon from "@mui/icons-material/Biotech";
 import AssignmentIcon from "@mui/icons-material/Assignment";
+import DataArrayIcon from '@mui/icons-material/DataArray';
+import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
+import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
 
 export interface BlockParams {
   title: string;
@@ -24,6 +27,22 @@ export default function Block(params: { block: BlockParams }) {
         <SchoolIcon
           className="text-[#874600]"
           style={{ width: "100%", height: "100%" }}
+        />
+      );
+      break;
+    case "board":
+      icon = (
+        <DeveloperBoardIcon
+          className="text-[#33333]"
+          style={{ width: "100%", height: "100%" }}
+        />
+      );
+      break;
+    case "fix":
+      icon = (
+        <AutoFixHighIcon
+          className="text-[#33333]"
+          style={{ width: "90%", height: "90%" }}
         />
       );
       break;
@@ -75,6 +94,7 @@ export default function Block(params: { block: BlockParams }) {
         />
       );
       break;
+      
   }
 
   return (
