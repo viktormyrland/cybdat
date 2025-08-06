@@ -1,6 +1,8 @@
 "use client";
+import { useRouter } from "next/navigation";
 import Block from "./_components/block";
 import { Oxanium, Lato } from "next/font/google";
+import { useCallback, useEffect } from "react";
 
 const oxanium = Oxanium({ weight: "600", subsets: ["latin"] });
 const lato = Lato({ weight: "400", subsets: ["latin"] });
@@ -41,9 +43,34 @@ const blocks = [
 ];
 
 export default function Home() {
+
+  const router = useRouter();
+
+  const handleKeyDown = useCallback((event: KeyboardEvent) => {
+    if (Number.isInteger(Number(event.key))) {
+      const num = Number(event.key) - 1;
+      if (num < blocks.length && num >= 0) {
+        const url = blocks[num]!.url;
+        router.push(url);
+      }
+
+    }
+
+  }, [])
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleKeyDown]); // Dependency on handleGlobalKeyDown to ensure correct cleanup
+
+
   return (
     <main className="flex h-full min-h-screen w-screen flex-col items-center justify-between bg-gradient-to-b from-[#533A71] to-[#26202E]">
-      <div className="flex w-full flex-col items-center gap-2 pt-6">
+      <div className="flex w-full flex-col items-center gap-2 pt-6" >
         <h1 className={`${oxanium.className} text-5xl text-white`}>
           CYBDAT-START
         </h1>
