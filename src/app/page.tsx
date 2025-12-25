@@ -9,15 +9,9 @@ const lato = Lato({ weight: "400", subsets: ["latin"] });
 
 const blocks = [
   {
-    title: "AlgDat",
-    subtitle: "TDT4120",
-    url: "https://algdat.idi.ntnu.no/",
-    icon: "board",
-  },
-  {
-    title: "Matematikk 4D",
-    subtitle: "TMA4135",
-    url: "https://wiki.math.ntnu.no/tma4130/2025h/start",
+    title: "Statistikk",
+    subtitle: "TMA4245",
+    url: "https://wiki.math.ntnu.no/tma4245/2026v/start",
     icon: "math",
   },
   {
