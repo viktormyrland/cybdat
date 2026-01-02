@@ -94,7 +94,15 @@ export default function Block(params: { block: BlockParams }) {
         />
       );
       break;
-      
+    case "assignmentStack":
+      icon = (
+        <AssignmentIcon
+          className="text-[#cc9723]"
+          style={{ width: "95%", height: "95%" }}
+        />
+      );
+      break;
+
   }
 
   return (

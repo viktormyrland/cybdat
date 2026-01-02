@@ -25,7 +25,14 @@ const blocks = [
     icon: "circle",
   },
   {
+    title: "Stack",
+    subtitle: "stack.math.ntnu.no",
+    url: "https://stack.math.ntnu.no/",
+    icon: "assignmentStack",
+  },
+  {
     title: "Ovsys",
+    subtitle: "ovsys.math.ntnu.no",
     url: "https://ovsys.math.ntnu.no/",
     icon: "assignment",
   },
