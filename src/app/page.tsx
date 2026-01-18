@@ -85,6 +85,12 @@ export default function Home() {
             return <Block key={_index} block={b} />;
           })}
         </div>
+        <div className="text-white ">
+          <a href="https://viktormy.folk.ntnu.no/TTM4180/Schedule_2026.pdf"><p>Nettverkshåndtering - Schedule_2026.pdf</p></a>
+          <a href="https://viktormy.folk.ntnu.no/TDT4145/Lecture plan_1.pdf"><p>Databaser - Lecture_plan_1.pdf</p></a>
+          <a href="https://viktormy.folk.ntnu.no/TDT4145/lecture-plan2.jpg"><p>Databaser - lecture-plan2.jpg</p></a>
+          <a href="https://viktormy.folk.ntnu.no/TTT4203/Hjelpehefte.pdf"><p>ADE - Hjelpehefte.pdf</p></a>
+        </div>
       </div>
       {/* <div className="h-[50px] w-full bg-red-500"><h3></h3></div> */}
     </main>
