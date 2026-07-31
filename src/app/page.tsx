@@ -3,7 +3,6 @@ import { useRouter } from "next/navigation";
 import Block from "./_components/block";
 import { Oxanium, Lato } from "next/font/google";
 import { useCallback, useEffect } from "react";
-import Countdown from "react-countdown";
 
 const oxanium = Oxanium({ weight: "600", subsets: ["latin"] });
 const lato = Lato({ weight: "400", subsets: ["latin"] });
@@ -43,25 +42,6 @@ const blocks = [
     icon: "fix",
   },
 ];
-
-const countdowns = [
-  {
-    name: "Databaser",
-    when: new Date("2026-05-08T09:00:00Z")
-  },
-  {
-    name: "Statistikk",
-    when: new Date("2026-05-11T09:00:00Z")
-  },
-  {
-    name: "ADE",
-    when: new Date("2026-05-26T15:00:00Z")
-  },
-  {
-    name: "Nettverkshåndtering",
-    when: new Date("2026-06-02T15:00:00Z")
-  },
-]
 
 export default function Home() {
 
@@ -110,16 +90,6 @@ export default function Home() {
           <a href="https://viktormy.folk.ntnu.no/TDT4145/Lecture plan_1.pdf"><p>Databaser - Lecture_plan_1.pdf</p></a>
           <a href="https://viktormy.folk.ntnu.no/TDT4145/lecture-plan2.jpg"><p>Databaser - lecture-plan2.jpg</p></a>
           <a href="https://viktormy.folk.ntnu.no/TTT4203/Hjelpehefte.pdf"><p>ADE - Hjelpehefte.pdf</p></a>
-        </div>
-        <div className="flex">
-          {countdowns.map((b, _index) => {
-            return (
-              <div className="bg-white p-2 m-2 rounded-md flex-col justify-center items-center text-center" key={_index}>
-                <h3>{b.name}</h3>
-                <Countdown date={b.when} />
-              </div>
-            );
-          })}
         </div>
       </div>
       {/* <div className="h-[50px] w-full bg-red-500"><h3></h3></div> */}
